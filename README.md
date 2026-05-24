@@ -12,10 +12,10 @@ By [TheSeniorDev](https://theseniordev.com/) · MIT-licensed · Contributions we
 
 ## What's inside
 
-| Skill | Purpose | Invoke |
+| Skill | What it does | Invoke |
 |---|---|---|
-| [`react-senior-review`](./react-senior-review) | Senior-level architecture review of a React feature. Five dimensions, prioritized findings (`Critical → Nit`), `file:line` + why + concrete fix, then per-finding apply. | `/react-senior-review <path>` |
-| [`react-interview`](./react-interview) | Interactive 10-question MCQ React interview. Mixed difficulty (3 junior, 4 mid, 3 senior). Per-question feedback. Final score with dimension breakdown and study plan. | `/react-interview [topic]` |
+| [`react-senior-review`](./react-senior-review) | Senior architecture review of a React feature. | `/react-senior-review <path>` |
+| [`react-interview`](./react-interview) | 10-question React interview, MCQ, scored. | `/react-interview [topic]` |
 
 Both skills share **one** canonical knowledge file: [`react-senior-review/principles.md`](./react-senior-review/principles.md). Edit it once — both skills update in lockstep. Zero drift.
 
