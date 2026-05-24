@@ -1,12 +1,12 @@
+<img src="./cover.webp" alt="A senior wizard in sunglasses — TheSeniorDev" width="320" align="right" />
+
 # react-interview
 
-<p align="center">
-  <img src="./cover.webp" alt="A senior wizard in sunglasses — TheSeniorDev" width="640" />
-</p>
-
-<p align="center"><strong>Interview yourself. Find your gaps. Close them.</strong></p>
+**Interview yourself. Find your gaps. Close them.**
 
 A 10-question multiple-choice React interview, run interactively inside Claude Code. Built by [TheSeniorDev](https://theseniordev.com/) — paired with [`react-senior-review`](../react-senior-review/).
+
+<br clear="right" />
 
 ## Install
 

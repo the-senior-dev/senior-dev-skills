@@ -1,14 +1,12 @@
-<p align="center">
-  <img src="./cover.webp" alt="A senior wizard in sunglasses — TheSeniorDev" width="640" />
-</p>
+<img src="./cover.webp" alt="A senior wizard in sunglasses — TheSeniorDev" width="320" align="right" />
 
-<h1 align="center">senior-dev-skills</h1>
+# senior-dev-skills
 
-<p align="center"><strong>Claude Code skills that ship senior engineering judgment.</strong></p>
+**Claude Code skills that ship senior engineering judgment.**
 
-<p align="center">
-  By <a href="https://theseniordev.com/">TheSeniorDev</a> · MIT-licensed · Contributions welcome
-</p>
+By [TheSeniorDev](https://theseniordev.com/) · MIT-licensed · Contributions welcome
+
+<br clear="right" />
 
 ---
 

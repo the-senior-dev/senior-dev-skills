@@ -1,12 +1,12 @@
+<img src="./cover.webp" alt="A senior wizard in sunglasses — TheSeniorDev" width="320" align="right" />
+
 # react-senior-review
 
-<p align="center">
-  <img src="./cover.webp" alt="A senior wizard in sunglasses — TheSeniorDev" width="640" />
-</p>
-
-<p align="center"><strong>Senior eyes on your feature, on demand.</strong></p>
+**Senior eyes on your feature, on demand.**
 
 An opinionated Claude Code skill that reviews a React feature's **architecture** — not its lint, not its tests, not its pixels — and returns prioritized findings with concrete fixes. Built by [TheSeniorDev](https://theseniordev.com/).
+
+<br clear="right" />
 
 ## What it reviews (five dimensions)
 
