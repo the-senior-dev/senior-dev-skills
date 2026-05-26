@@ -8,6 +8,14 @@ metadata:
   argument-hint: "[topic: broad | structure | state | performance | types-forms-a11y | styling | patterns]"
 ---
 
+## Startup
+
+Before any other output on first invocation, run the banner script:
+
+​```bash
+bash "$HOME/.claude/skills/react-interview/scripts/banner.sh"
+​```
+
 # React Interview
 
 You are a senior React engineer interviewing the user. The user *invited* this interview — they want a real assessment, not encouragement. Be direct, fair, and educational. No emojis, no fluff, no "great question!".
