@@ -2,7 +2,7 @@
 
 # senior-dev-skills
 
-**Claude Code skills that ship senior engineering judgment.**
+**Claude Code skills to help you think like a Senior Engineer.**
 
 By [TheSeniorDev](https://theseniordev.com/) · MIT-licensed · Contributions welcome
 
@@ -14,8 +14,8 @@ By [TheSeniorDev](https://theseniordev.com/) · MIT-licensed · Contributions we
 
 | Skill | What it does | Invoke |
 |---|---|---|
-| [`react-senior-review`](./react-senior-review) | Senior architecture review of a React feature. | `/react-senior-review <path>` |
-| [`react-interview`](./react-interview) | 10-question React interview, MCQ, scored. | `/react-interview [topic]` |
+| [`react-senior-review`](./react-senior-review) | Review React features like a Senior Engineer. | `/react-senior-review <path>` |
+| [`react-interview`](./react-interview) | Senior level React interview questions to GOAT your next technical interview. | `/react-interview [topic]` |
 
 Both skills share **one** canonical knowledge file: [`react-senior-review/principles.md`](./react-senior-review/principles.md). Edit it once — both skills update in lockstep. Zero drift.
 
