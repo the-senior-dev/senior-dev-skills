@@ -78,4 +78,4 @@ If you're adding a new skill, mirror the layout: `SKILL.md` is the workflow, `pr
 
 ---
 
-<p align="center">Built and battle-tested by @bogdanned & @dragosgn at <a href="https://theseniordev.com/">TheSeniorDev</a>.</p>
+<p align="center">Built and battle-tested by <a href="https://github.com/bogdanned">bogdanned</a> & <a href="https://github.com/dragosgn">dragosgn</a> at <a href="https://theseniordev.com/">TheSeniorDev</a>.</p>
