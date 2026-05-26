@@ -1,6 +1,8 @@
 # React Senior Review — Principles
 
-The canonical rule and pattern catalog. Read by:
+The Senior rules and patterns catalog.
+
+Read by:
 
 - **`react-senior-review`** — for code reviews (find violations, propose fixes).
 - **`react-interview`** — for self-assessment quizzes (turn principles into MCQs).
