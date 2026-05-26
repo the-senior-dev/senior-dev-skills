@@ -5,9 +5,10 @@ const os = require('os');
 
 const SKILLS = ['react-interview', 'react-senior-review'];
 const TARGET_DIR = path.join(os.homedir(), '.claude', 'skills');
-const SOURCE_DIR = path.join(__dirname, '..');
+const SOURCE_DIR = path.join(__dirname, '..', 'skills');
 const force = process.argv.includes('--force');
 
+// Create the target directory if it doesn't exist
 fs.mkdirSync(TARGET_DIR, { recursive: true });
 
 // Print the banner

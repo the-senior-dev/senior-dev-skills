@@ -8,9 +8,10 @@
     },
     "files": [
       "bin/",
-      "react-interview/",
-      "react-senior-review/",
-      "README.md"
+      "skills/",
+      ".claude-plugin/",
+      "README.md",
+      "LICENSE"
     ],
     "keywords": ["claude", "claude-code", "skills", "react", "interview"],
     "license": "MIT",

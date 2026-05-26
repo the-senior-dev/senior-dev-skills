@@ -1,0 +1,16 @@
+{
+  "name": "senior-dev-skills",
+  "owner": {
+    "name": "theSeniorDev"
+  },
+  "plugins": [
+    {
+      "name": "senior-dev-skills",
+      "source": {
+        "source": "github",
+        "repo": "the-senior-dev/senior-dev-skills"
+      },
+      "description": "Senior-level Claude Code skills by theSeniorDev"
+    }
+  ]
+}
