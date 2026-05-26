@@ -15,9 +15,9 @@ By [TheSeniorDev](https://theseniordev.com/) · MIT-licensed · Contributions we
 | Skill | What it does | Invoke |
 |---|---|---|
 | [`react-senior-review`](./react-senior-review) | Review React features like a Senior Engineer. | `/react-senior-review <path>` |
-| [`react-interview`](./react-interview) | Senior level React interview questions to GOAT your next technical interview. | `/react-interview [topic]` |
+| [`react-interview`](./react-interview) | Senior level React interview practice to nail your next interview. | `/react-interview [topic]` |
 
-Both skills share **one** canonical knowledge file: [`react-senior-review/principles.md`](./react-senior-review/principles.md). Edit it once — both skills update in lockstep. Zero drift.
+Both skills share **one** core knowledge file: [`react-senior-review/principles.md`](./react-senior-review/principles.md). Edit it once — both skills update.
 
 ## Install
 
@@ -35,15 +35,17 @@ Now in Claude Code:
 /react-interview state                       # quiz yourself on state & data flow
 ```
 
-`git pull` in the clone updates both skills.
+`git pull` in the cloned repo to update both skills. 
+
+(you will have to copy the folders gain in your skills folder for Claude to get the udates)
 
 > Need Claude Code? Get it at [claude.com/code](https://claude.com/code).
 
 ## Why these skills
 
-LLM coding assistants ship a lot of code. Most of it works. Less of it is *architected* — composed for the next engineer who has to read it, not for the prompt that wrote it. These skills bring a senior engineer's review bar into your loop:
+These skills leverage software fundamentals, design patterns and Senior Mental Models to a Senior Engineer's review bar into your loop:
 
-- **Opinionated.** Pick a side. No hedging. Readability > cleverness.
+- **Opinionated.** They are biased towards Senior-level wisdom learned in decades of taking real software applications to production. 
 - **Anti-`useEffect`.** Derived state, event handlers, render-time computation — in that order.
 - **Server state ≠ client state.** Server data lives in a query layer (TanStack, SWR, route loaders, RSC). Not in `useState`+`useEffect`. Not in Zustand.
 - **Push state down.** State lives next to its consumer.
