@@ -24,8 +24,8 @@ Both skills share **one** core knowledge file: [`react-senior-review/principles.
 ```bash
 git clone https://github.com/the-senior-dev/senior-dev-skills.git ~/code/senior-dev-skills
 mkdir -p ~/.claude/skills
-ln -sfn ~/code/senior-dev-skills/react-senior-review ~/.claude/skills/react-senior-review
-ln -sfn ~/code/senior-dev-skills/react-interview     ~/.claude/skills/react-interview
+ln -sfn ~/code/senior-dev-skills/skills/react-senior-review ~/.claude/skills/react-senior-review
+ln -sfn ~/code/senior-dev-skills/skills/react-interview     ~/.claude/skills/react-interview
 ```
 
 Now in Claude Code:
@@ -35,7 +35,7 @@ Now in Claude Code:
 /react-interview state                       # quiz yourself on state & data flow
 ```
 
-`git pull` in the cloned repo to update both skills (you will have to copy the folders gain in your skills folder for Claude to get the updates).
+Because the skills are **symlinked** into `~/.claude/skills`, a `git pull` in the cloned repo updates both skills automatically — the changes are picked up next time you start Claude Code. No copying required.
 
 > Need Claude Code? Get it at [claude.com/code](https://claude.com/code).
 
@@ -45,12 +45,12 @@ These skills are like having a Senior Engineer by your side, pointing out things
 
 To do that, they leverage Software Fundamentals, Design Patterns and Senior Mental Models and the power of Claude Code. Keep in mind they are:
 
-- **Highly Opinionated.** Just like real Senior Engineers, they are biased towards Senior-level wisdom learned in decades of taking real software applications to production.
-- **Anti-`useEffect`.** Derived state, event handlers, render-time computation — in that order.
-- **Server state ≠ client state.** Server data lives in a query layer (TanStack, SWR, route loaders, RSC). Not in `useState`+`useEffect`. Not in Zustand.
-- **Push state down.** State lives next to its consumer. Or, as close as possible.
-- **Single source of truth.** Everything that can be shared, should be shared. Hence the `principles.md`.
-- **Name the pattern.** Custom hook? Compound components? HOC? Render prop? State machine? Optimistic update? 
+- **Highly opinionated.** Biased toward what holds up in production — the wisdom a senior reviewer brings, not a neutral checklist.
+- **Anti-`useEffect`.** Reach for derived state first, then event handlers, then render-time computation. Effects are the last resort.
+- **Server state ≠ client state.** Server data lives in a query layer (TanStack Query, SWR, route loaders, RSC) — never in `useState`+`useEffect`, never in Zustand.
+- **Push state down.** State lives as close to its consumer as possible.
+- **Colocate, then share.** Code used by one feature stays in that feature; promote it to `shared/` only when a second feature actually needs it.
+- **Name the pattern.** Custom hook? Compound components? HOC? Render prop? State machine? Optimistic update? If a known pattern fits the fix, it gets named.
 
 ## Roadmap
 

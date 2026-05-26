@@ -1,6 +1,6 @@
 {
     "name": "@theseniordev/skills",
-    "version": "1.0.0",
+    "version": "1.3.0",
     "description": "Senior-level Claude Code skills by theSeniorDev",
     "publishConfig": { "access": "public" },
     "bin": {
@@ -15,9 +15,9 @@
     ],
     "keywords": ["claude", "claude-code", "skills", "react", "interview"],
     "license": "MIT",
-    "homepage": "https://github.com/<you>/senior-dev-skills",
+    "homepage": "https://github.com/the-senior-dev/senior-dev-skills",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/<you>/senior-dev-skills.git"
-    } 
+      "url": "git+https://github.com/the-senior-dev/senior-dev-skills.git"
+    }
   }

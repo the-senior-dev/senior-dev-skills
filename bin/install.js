@@ -5,7 +5,7 @@ const os = require('os');
 
 const SKILLS = ['react-interview', 'react-senior-review'];
 const TARGET_DIR = path.join(os.homedir(), '.claude', 'skills');
-const SOURCE_DIR = path.join(__dirname, '..', 'skills');
+const SOURCE_DIR = path.resolve(__dirname, '..', 'skills');
 const force = process.argv.includes('--force');
 
 // Create the target directory if it doesn't exist
@@ -26,16 +26,30 @@ let installed = 0, skipped = 0;
 for (const skill of SKILLS) {
   const src = path.join(SOURCE_DIR, skill);
   const dst = path.join(TARGET_DIR, skill);
-  if (fs.existsSync(dst) && !force) {
+
+  // lstatSync (not existsSync) so we detect a broken/existing symlink too.
+  let existing = null;
+  try { existing = fs.lstatSync(dst); } catch {}
+
+  // Already symlinked to the right place — nothing to do.
+  if (existing && existing.isSymbolicLink() && path.resolve(fs.readlinkSync(dst)) === src) {
+    console.log(`  ⊙  ${skill}  (already linked)`);
+    skipped++;
+    continue;
+  }
+
+  if (existing && !force) {
     console.log(`  ⊙  ${skill}  (already installed — use --force to overwrite)`);
     skipped++;
     continue;
   }
-  if (fs.existsSync(dst)) fs.rmSync(dst, { recursive: true, force: true });
-  fs.cpSync(src, dst, { recursive: true });
-  console.log(`  ✓  ${skill}`);
+
+  if (existing) fs.rmSync(dst, { recursive: true, force: true });
+  fs.symlinkSync(src, dst, 'dir');
+  console.log(`  ✓  ${skill}  →  ${src}`);
   installed++;
 }
 
 console.log(`\nInstalled ${installed}, skipped ${skipped}.`);
+console.log(`Skills are symlinked, so a 'git pull' in this repo keeps them up to date.`);
 console.log(`Restart Claude Code (or open a new session) to pick up the new skills.`);

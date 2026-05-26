@@ -1,10 +1,10 @@
 ---
 name: react-interview
-description: Interactive 10-question multiple-choice React interview, drawn from the same principles as `react-senior-review`. Mixed difficulty (3 junior, 4 mid, 3 senior). Per-question feedback. Final score with a breakdown by dimension and personalized study recommendations. Use when asked to "interview me", "quiz me on React", "test my React knowledge", "senior interview prep", or via `/react-interview [topic]`.
+description: Interactive 10-question multiple-choice React interview, by theSeniorDev — drawn from the same principles as `react-senior-review`. Asks which level you're interviewing for (junior/mid/senior) and shifts difficulty to match. Per-question feedback. Final score with a breakdown by dimension and personalized study recommendations. Use when asked to "interview me", "quiz me on React", "test my React knowledge", "senior interview prep", or via `/react-interview [topic]`.
 license: MIT
 metadata:
   author: theseniordev
-  version: "1.0.0"
+  version: "1.3.0"
   argument-hint: "[topic: broad | structure | state | performance | types-forms-a11y | styling | patterns]"
 ---
 
@@ -40,9 +40,17 @@ All questions must be grounded in **`../react-senior-review/principles.md`** (re
 
 ## Process
 
-### 1. Opening — confirm scope
+### 1. Opening — confirm level, then scope
 
-If the user passed a topic argument, use it directly. Otherwise ask which mode they want, using AskUserQuestion with these four options:
+**First, ask which level they're interviewing for**, using AskUserQuestion with these three options:
+
+- **Junior** — first React role / early-career. Weighted toward fundamentals.
+- **Mid** — shipping features independently; testing the *why*.
+- **Senior** — architecture and failure-modes-under-load judgment.
+
+This level **shifts the difficulty distribution** of the 10 questions (see step 2) — it doesn't lock every question to one level. Use it again at the end to frame the result against the bar they were aiming for.
+
+**Then confirm scope.** If the user passed a topic argument, use it directly. Otherwise ask which mode they want, using AskUserQuestion with these four options:
 
 - **Broad** (Recommended) — 10 questions spread across all five dimensions + patterns. Realistic interview shape.
 - **Focused: state & data flow** — Rules of Hooks, derived state, server vs client, effects.
@@ -51,13 +59,18 @@ If the user passed a topic argument, use it directly. Otherwise ask which mode t
 
 (If the user prefers another focus area — structure, types/forms/a11y, or styling/motion — accept it. The four options above are just defaults.)
 
-Then state the rules briefly, in two lines: 10 questions, multiple choice (4 options each), mixed difficulty (3 junior, 4 mid, 3 senior). Feedback after each question. Final score with a breakdown.
+Then state the rules briefly, in two lines: 10 questions, multiple choice (4 options each), difficulty weighted to your chosen level. Feedback after each question. Final score with a breakdown.
 
 ### 2. Generate the 10 questions
 
 Before asking anything, plan the full set internally:
 
-- **Distribution**: 3 junior, 4 mid, 3 senior — calibrated against the senior-dev bar implied by `principles.md`.
+- **Distribution by chosen level** (always 10 questions, calibrated against the bar implied by `principles.md`):
+  - **Junior** → 5 junior, 4 mid, 1 senior
+  - **Mid** → 2 junior, 5 mid, 3 senior
+  - **Senior** → 1 junior, 4 mid, 5 senior
+
+  Keep the spread — never make all 10 a single level. The point is to stretch the candidate one notch above their target while keeping it fair.
 - **Coverage**: in **broad** mode, hit at least 4 of the 5 dimensions + patterns; never more than 3 from the same dimension. In **focused** mode, all 10 from the chosen topic; vary the principles you target.
 - **Question quality bar:**
   - Each question tests *one principle*, not a fact-recall trivia point.
@@ -140,6 +153,8 @@ After Q10, output the result in this exact shape. No emojis.
 - **0–2**: Junior. Start with the basics — `principles.md` is a complete syllabus.
 
 Be honest about the band. Do not inflate. If the user scored 5/10, do not write "great job!" — write "5/10 — solid mid-level grasp, with gaps in <areas>."
+
+**Frame against their target level.** Since the question set was weighted to the level they chose in step 1, interpret the score relative to that bar in one line — e.g. "You aimed at **senior**; 6/10 on a senior-weighted set means the fundamentals are there but the senior-judgment questions (state locality, compositor-thread motion) are where you lost points." A 9/10 on a junior-weighted set is not the same signal as 9/10 on a senior-weighted set — say so.
 
 ## What NOT to do
 
