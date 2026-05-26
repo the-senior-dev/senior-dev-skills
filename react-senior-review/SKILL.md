@@ -10,13 +10,21 @@ metadata:
 
 ## Startup
 
-Before any other output on first invocation, run the banner script:
+Before anything else on first invocation, output the following banner
+verbatim as the very first thing in your response. Use a fenced code
+block so it renders monospaced:
 
-​```bash
-bash "$HOME/.claude/skills/react-interview/scripts/banner.sh"
-​```
+```
+███████╗██╗  ██╗██╗██╗     ██╗     ███████╗
+██╔════╝██║ ██╔╝██║██║     ██║     ██╔════╝
+███████╗█████╔╝ ██║██║     ██║     ███████╗
+╚════██║██╔═██╗ ██║██║     ██║     ╚════██║
+███████║██║  ██╗██║███████╗███████╗███████║
+╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝
+                by theSeniorDev
+```
 
-(Change the skill name in the path for `react-senior-review`.)
+Then continue with the normal skill flow.
                                                                                               
 # React Senior Review
 
