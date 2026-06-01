@@ -17,7 +17,7 @@ By [TheSeniorDev](https://theseniordev.com/) · MIT-licensed · Contributions we
 | [`react-senior-review`](./skills/react-senior-review) | Review React features like a Senior Engineer. | `/react-senior-review <path>` |
 | [`react-interview`](./skills/react-interview) | Senior level React interview practice to nail your next interview. | `/react-interview [topic]` |
 
-Both skills share **one** knowledge catalog: [`skills/react-senior-review/references/`](./skills/react-senior-review/references) (indexed by [`principles.md`](./skills/react-senior-review/principles.md)) — one file per dimension, plus Rules of Hooks, the patterns playbook, the severity rubric, and curated docs. Edit a reference once — both skills update.
+Both skills run on the same rules catalog — one file per dimension, plus Rules of Hooks, the patterns playbook, the severity rubric, and curated docs. The canonical copy lives in [`skills/react-senior-review/references/`](./skills/react-senior-review/references) (indexed by [`principles.md`](./skills/react-senior-review/principles.md)); `react-interview` carries a **synced copy** so each skill installs and runs independently. Edit the canonical files, then run `scripts/sync-references.sh`.
 
 ## Install
 

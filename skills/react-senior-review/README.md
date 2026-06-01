@@ -24,13 +24,10 @@ Pixel polish, naming bikesheds, formatting, test coverage, absence of a specific
 
 ## Install
 
-This skill ships in the [`senior-dev-skills`](https://github.com/the-senior-dev/senior-dev-skills) monorepo. Easiest setup — clone once, symlink each skill into your Claude Code skills directory so `git pull` keeps everything fresh:
+This skill ships in the [`senior-dev-skills`](https://github.com/the-senior-dev/senior-dev-skills) repo and is **self-contained** — it owns the canonical rules catalog (`references/`, indexed by `principles.md`; the paired `react-interview` skill carries a synced copy).
 
 ```bash
-git clone https://github.com/the-senior-dev/senior-dev-skills.git ~/code/senior-dev-skills
-mkdir -p ~/.claude/skills
-ln -sfn ~/code/senior-dev-skills/react-senior-review ~/.claude/skills/react-senior-review
-ln -sfn ~/code/senior-dev-skills/react-interview     ~/.claude/skills/react-interview   # optional, paired skill
+npx skills@latest add the-senior-dev/senior-dev-skills
 ```
 
 Then in Claude Code:
