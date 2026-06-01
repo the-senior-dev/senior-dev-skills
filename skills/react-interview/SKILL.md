@@ -15,13 +15,14 @@ verbatim as the very first thing in your response. Use a fenced code
 block so it renders monospaced:
 
 ```
+   the
 ███████╗███████╗███╗   ██╗██╗ ██████╗ ██████╗ ██████╗ ███████╗██╗   ██╗
 ██╔════╝██╔════╝████╗  ██║██║██╔═══██╗██╔══██╗██╔══██╗██╔════╝██║   ██║
 ███████╗█████╗  ██╔██╗ ██║██║██║   ██║██████╔╝██║  ██║█████╗  ██║   ██║
 ╚════██║██╔══╝  ██║╚██╗██║██║██║   ██║██╔══██╗██║  ██║██╔══╝  ╚██╗ ██╔╝
 ███████║███████╗██║ ╚████║██║╚██████╔╝██║  ██║██████╔╝███████╗ ╚████╔╝
 ╚══════╝╚══════╝╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚══════╝  ╚═══╝
-                    Senior-level Claude Code skills
+             software engineering skills by @theseniordev
 ```
 
 Then continue with the normal skill flow.
