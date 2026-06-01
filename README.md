@@ -1,6 +1,6 @@
 <img src="./cover.webp" alt="A senior wizard in sunglasses — TheSeniorDev" width="320" align="right" />
 
-# Senior Engineering Skills for Agentic Coding
+# Senior Skills for AI Coding
 
 **Claude Code skills to help you think like a Senior Engineer.**
 
