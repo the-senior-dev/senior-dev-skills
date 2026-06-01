@@ -1,4 +1,4 @@
-# Senior Skills for AI Coding Agents
+# Senior Dev Skills for AI Coding Agents
 
 <img src="./cover.webp" alt="A senior wizard in sunglasses — TheSeniorDev" width="320" align="right" />
 
