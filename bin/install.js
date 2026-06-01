@@ -20,7 +20,7 @@ console.log(`
 \x1b[38;5;33m╚════██║██╔══╝  ██║╚██╗██║██║██║   ██║██╔══██╗██║  ██║██╔══╝  ╚██╗ ██╔╝\x1b[0m
 \x1b[38;5;27m███████║███████╗██║ ╚████║██║╚██████╔╝██║  ██║██████╔╝███████╗ ╚████╔╝\x1b[0m
 \x1b[38;5;21m╚══════╝╚══════╝╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚══════╝  ╚═══╝\x1b[0m
-\x1b[38;5;245m             software engineering skills by @theseniordev\x1b[0m
+\x1b[38;5;245m            AI Software Engineering Skills by @theseniordev\x1b[0m
 `);
 
 let installed = 0, skipped = 0;

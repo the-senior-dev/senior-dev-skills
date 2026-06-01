@@ -22,7 +22,7 @@ block so it renders monospaced:
 ╚════██║██╔══╝  ██║╚██╗██║██║██║   ██║██╔══██╗██║  ██║██╔══╝  ╚██╗ ██╔╝
 ███████║███████╗██║ ╚████║██║╚██████╔╝██║  ██║██████╔╝███████╗ ╚████╔╝
 ╚══════╝╚══════╝╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚══════╝  ╚═══╝
-             software engineering skills by @theseniordev
+            AI Software Engineering Skills by @theseniordev
 ```
 
 Then continue with the normal skill flow.

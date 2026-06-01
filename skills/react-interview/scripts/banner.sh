@@ -18,4 +18,4 @@ printf '%s%s%s\n' "$C3" "███████╗█████╗  ██╔�
 printf '%s%s%s\n' "$C4" "╚════██║██╔══╝  ██║╚██╗██║██║██║   ██║██╔══██╗██║  ██║██╔══╝  ╚██╗ ██╔╝" "$R"
 printf '%s%s%s\n' "$C5" "███████║███████╗██║ ╚████║██║╚██████╔╝██║  ██║██████╔╝███████╗ ╚████╔╝" "$R"
 printf '%s%s%s\n' "$C6" "╚══════╝╚══════╝╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚══════╝  ╚═══╝" "$R"
-printf '%s%s%s\n' "$DIM" "             software engineering skills by @theseniordev" "$R"
+printf '%s%s%s\n' "$DIM" "            AI Software Engineering Skills by @theseniordev" "$R"
