@@ -50,7 +50,7 @@ This is **not** a style review, not a lint pass, not a security audit. Architect
 
 ## Knowledge source
 
-The five dimensions, the patterns playbook, the severity rubric, and the references all live in **`principles.md`** in this skill's directory. That file is the canonical rule catalog and is shared with the `react-interview` skill. Read it at the start of every review — do not rely on what you remember from training, and do not paraphrase rules from this `SKILL.md` (which intentionally omits them).
+The rule catalog lives in **`references/`** in this skill's directory, indexed by **`principles.md`** (the router). The five dimensions, the Rules of Hooks deep dive, the patterns playbook, the severity rubric, and the curated docs are each their own file. This catalog is shared with the `react-interview` skill. At the start of every review, read `principles.md`, then read **every file in `references/`** — do not rely on what you remember from training, and do not paraphrase rules from this `SKILL.md` (which intentionally omits them).
 
 ## Invocation
 
@@ -79,14 +79,16 @@ Output a short **Feature Map** at the top of the report (5–10 lines). This anc
 
 ### 2. Apply the principles
 
-Read **`principles.md`** in this skill's directory. It contains:
+Read the catalog via **`principles.md`** (the index) and the files it points to in **`references/`**:
 
-- **A. Structure & boundaries** — composition, feature seams, component length, one-per-file, pure helpers outside, early returns, readability, pattern naming.
-- **B. State & data flow** — Rules of Hooks, essential-vs-derived, state locality, SRP per slice, server-state-in-query-layer, effect misuse, URL-as-state.
-- **C. Performance & rendering** — re-render scope, `memo`/`useMemo`/`useCallback` discipline, Suspense, code splitting, list virtualization, waterfalls, bundle hot paths.
-- **D. Types, forms, testability, a11y** — boundary typing, RHF/Zod patterns, test seams, semantic HTML, focus management, WCAG.
-- **E. Styling architecture & motion** — design tokens, inline-style discipline, CSS-vs-JS animations, compositor-thread properties, `prefers-reduced-motion`, scoped selectors.
-- **Patterns Playbook** — when each named React pattern earns its keep (custom hook, compound components, headless, render prop, HOC, slot, polymorphic, state machine, optimistic update, server components, and more).
+- **A. Structure & boundaries** (`references/structure-boundaries.md`) — composition, feature seams, component length, one-per-file, pure helpers outside, early returns, readability, pattern naming.
+- **B. State & data flow** (`references/state-data-flow.md`) — essential-vs-derived, state locality, SRP per slice, server-state-in-query-layer, effect misuse, URL-as-state.
+- **B.1 Rules of Hooks** (`references/rules-of-hooks.md`) — deep dive: the two rules, why call order matters, violations, lint enforcement. Always CRITICAL.
+- **C. Performance & rendering** (`references/performance.md`) — re-render scope, `memo`/`useMemo`/`useCallback` discipline, Suspense, code splitting, list virtualization, waterfalls, bundle hot paths.
+- **D. Types, forms, testability, a11y** (`references/types-forms-a11y.md`) — boundary typing, RHF/Zod patterns, test seams, semantic HTML, focus management, WCAG.
+- **E. Styling architecture & motion** (`references/styling-motion.md`) — design tokens, inline-style discipline, CSS-vs-JS animations, compositor-thread properties, `prefers-reduced-motion`, scoped selectors.
+- **Patterns Playbook** (`references/patterns-playbook.md`) — when each named React pattern earns its keep (custom hook, compound components, headless, render prop, HOC, slot, polymorphic, state machine, optimistic update, server components, and more).
+- **References** (`references/react-docs.md`) — curated canonical links to cite in findings.
 
 Walk the principles in order. For each violation found in the Feature Map, capture a finding: severity, `file:line`, one-line title, why-it-matters (≤2 sentences), concrete fix (often a code snippet — name the pattern from the Playbook when one fits), and an optional reference link.
 
@@ -130,7 +132,7 @@ F-04 — ...
 Reply with finding IDs to apply (e.g. `F-01, F-03`), a severity (`all critical`, `all major`), or `skip` to stop.
 ```
 
-Triage per the **severity rubric in `principles.md`**. Hard caps: at most 5 Critical, 10 Major. If you have more, you're inflating — re-triage.
+Triage per the **severity rubric in `references/severity-rubric.md`**. Hard caps: at most 5 Critical, 10 Major. If you have more, you're inflating — re-triage.
 
 If a dimension has zero findings, say so in one line under its own subhead — don't pad.
 

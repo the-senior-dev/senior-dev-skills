@@ -10,7 +10,7 @@ A 10-question multiple-choice React interview, run interactively inside Claude C
 
 ## Install
 
-This skill ships in the [`senior-dev-skills`](https://github.com/the-senior-dev/senior-dev-skills) monorepo and **requires `react-senior-review`** to be installed alongside it — it reads `react-senior-review/principles.md` as its question source.
+This skill ships in the [`senior-dev-skills`](https://github.com/the-senior-dev/senior-dev-skills) monorepo and **requires `react-senior-review`** to be installed alongside it — it reads `react-senior-review/references/` (indexed by `principles.md`) as its question source.
 
 ```bash
 git clone https://github.com/the-senior-dev/senior-dev-skills.git ~/code/senior-dev-skills
@@ -40,7 +40,7 @@ Or jump straight to a focus area:
 3. **Per-question feedback** — instant correct/incorrect + 2–3 sentence rationale citing the principle.
 4. **Final result** — score out of 10, band (junior → senior+), breakdown by dimension, recommended next steps linked to the source principles.
 
-Each question is grounded in [`principles.md`](../react-senior-review/principles.md) — the same canonical rule catalog used by the senior-review skill. Edit one file to update both skills.
+Each question is grounded in the [`references/`](../react-senior-review/references) catalog (indexed by [`principles.md`](../react-senior-review/principles.md)) — the same canonical rules used by the senior-review skill. Edit a reference once to update both skills.
 
 ## Topics
 

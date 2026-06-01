@@ -34,9 +34,9 @@ The interview is a 10-question multiple-choice quiz drawn from the same canonica
 
 ## Knowledge source
 
-All questions must be grounded in **`../react-senior-review/principles.md`** (relative to this skill's directory — absolute path: `~/.claude/skills/react-senior-review/principles.md`).
+All questions must be grounded in the shared catalog under **`../react-senior-review/`** (relative to this skill's directory — absolute path: `~/.claude/skills/react-senior-review/`). The index is `principles.md`; the rules live in `references/` (one file per dimension, plus `rules-of-hooks.md`, `patterns-playbook.md`, `severity-rubric.md`, `react-docs.md`).
 
-**At the start of every interview, read `principles.md` in full.** Generate questions from it. Do not improvise React trivia from training memory — that's how you ask wrong or outdated questions. If `principles.md` is missing, stop and tell the user the `react-senior-review` skill must be installed alongside this one.
+**At the start of every interview, read `principles.md` (the index) first.** Then read the reference files you need: in **broad** mode read **every file in `references/`**; in **focused** mode read only the file(s) for the chosen topic (e.g. `references/performance.md` for performance). Generate questions from those files. Do not improvise React trivia from training memory — that's how you ask wrong or outdated questions. If `principles.md` or the `references/` folder is missing, stop and tell the user the `react-senior-review` skill must be installed alongside this one.
 
 ## Process
 
@@ -99,7 +99,7 @@ After the user answers:
 
 1. State **Correct** or **Incorrect** in one word.
 2. Give the right answer (the full label, not just the position).
-3. **Rationale**: 2–3 sentences explaining *why* the right answer is right and *why* each top distractor is wrong. Cite the principle by name and the relevant principles.md section (e.g. "Principle B.2 — Essential vs derived state"). Add a link from the principles.md References section when one fits.
+3. **Rationale**: 2–3 sentences explaining *why* the right answer is right and *why* each top distractor is wrong. Cite the principle by name and the reference file it lives in (e.g. "Principle B.2 — Essential vs derived state, `references/state-data-flow.md`"). Add a link from `references/react-docs.md` when one fits.
 4. Move to the next question immediately. No "ready for the next one?" prompt — just ask Q(n+1).
 
 Track running score internally. Do not show it between questions.
@@ -130,11 +130,11 @@ After Q10, output the result in this exact shape. No emojis.
 
 ## Gaps
 
-- <one-line observation per weak area, max 3, each linked to a principle in principles.md>
+- <one-line observation per weak area, max 3, each linked to a principle in its `references/` file>
 
 ## Recommended next steps
 
-1. <concrete, specific — e.g. "Read principles.md §B.2 (Essential vs derived state) and refactor one feature in your codebase to remove a useState+useEffect derivation.">
+1. <concrete, specific — e.g. "Read references/state-data-flow.md B.2 (Essential vs derived state) and refactor one feature in your codebase to remove a useState+useEffect derivation.">
 2. <...>
 3. <...>
 
@@ -150,7 +150,7 @@ After Q10, output the result in this exact shape. No emojis.
 - **7–8**: Mid → senior. Strong fundamentals; refine the gap areas.
 - **5–6**: Mid. You ship features; you'd benefit from sharper architectural intuition.
 - **3–4**: Junior → mid. Lock in the principles in your weak areas before the next role.
-- **0–2**: Junior. Start with the basics — `principles.md` is a complete syllabus.
+- **0–2**: Junior. Start with the basics — the `references/` folder is a complete syllabus.
 
 Be honest about the band. Do not inflate. If the user scored 5/10, do not write "great job!" — write "5/10 — solid mid-level grasp, with gaps in <areas>."
 

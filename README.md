@@ -14,18 +14,22 @@ By [TheSeniorDev](https://theseniordev.com/) · MIT-licensed · Contributions we
 
 | Skill | What it does | Invoke |
 |---|---|---|
-| [`react-senior-review`](./react-senior-review) | Review React features like a Senior Engineer. | `/react-senior-review <path>` |
-| [`react-interview`](./react-interview) | Senior level React interview practice to nail your next interview. | `/react-interview [topic]` |
+| [`react-senior-review`](./skills/react-senior-review) | Review React features like a Senior Engineer. | `/react-senior-review <path>` |
+| [`react-interview`](./skills/react-interview) | Senior level React interview practice to nail your next interview. | `/react-interview [topic]` |
 
-Both skills share **one** core knowledge file: [`react-senior-review/principles.md`](./react-senior-review/principles.md). Edit it once — both skills update.
+Both skills share **one** knowledge catalog: [`skills/react-senior-review/references/`](./skills/react-senior-review/references) (indexed by [`principles.md`](./skills/react-senior-review/principles.md)) — one file per dimension, plus Rules of Hooks, the patterns playbook, the severity rubric, and curated docs. Edit a reference once — both skills update.
 
 ## Install
 
 ```bash
-git clone https://github.com/the-senior-dev/senior-dev-skills.git ~/code/senior-dev-skills
-mkdir -p ~/.claude/skills
-ln -sfn ~/code/senior-dev-skills/skills/react-senior-review ~/.claude/skills/react-senior-review
-ln -sfn ~/code/senior-dev-skills/skills/react-interview     ~/.claude/skills/react-interview
+npx skills@latest add the-senior-dev/senior-dev-skills
+```
+
+Or with Claude Code's native plugin marketplace:
+
+```
+/plugin marketplace add the-senior-dev/senior-dev-skills
+/plugin install senior-dev-skills@senior-dev-skills
 ```
 
 Now in Claude Code:
@@ -35,7 +39,7 @@ Now in Claude Code:
 /react-interview state                       # quiz yourself on state & data flow
 ```
 
-Because the skills are **symlinked** into `~/.claude/skills`, a `git pull` in the cloned repo updates both skills automatically — the changes are picked up next time you start Claude Code. No copying required.
+Restart Claude Code (or open a new session) to pick up the new skills.
 
 > Need Claude Code? Get it at [claude.com/code](https://claude.com/code).
 
@@ -54,7 +58,7 @@ To do that, they leverage Software Fundamentals, Design Patterns and Senior Ment
 
 ## Roadmap
 
-Each skill ships an authoritative `principles.md` and a thin `SKILL.md` that runs the workflow. Planned additions in the same monorepo:
+Each skill ships an authoritative knowledge catalog (a `references/` folder indexed by `principles.md`) and a thin `SKILL.md` that runs the workflow. Planned additions in the same monorepo:
 
 - `node-senior-review` / `node-interview`
 - `typescript-senior-review`
@@ -64,13 +68,13 @@ You can open an issue with the area you want next.
 
 ## Contributing
 
-The principles in `react-senior-review/principles.md` are the core of both skills. Pull requests are welcome — especially:
+The principles in `skills/react-senior-review/references/` are the core of both skills. Pull requests are welcome — especially:
 
 - Sharper rule statements (less verbose).
 - New patterns (with a clear "when it makes sense / when not").
 - Better calibration for interview questions.
 
-If you're adding a new skill, mirror the layout: `SKILL.md` is the workflow, `principles.md` (or a sibling) is the knowledge.
+If you're adding a new skill, mirror the layout: `SKILL.md` is the workflow, a `references/` folder (indexed by `principles.md`) is the knowledge.
 
 ## License
 

@@ -1,0 +1,13 @@
+# B. State & data flow
+
+1. **Rules of Hooks** (always **CRITICAL** when violated). Hooks must be called at the top level of a React function or custom hook — not in conditions, loops, nested functions, or after early returns. Custom hooks must be named `use*`. Full deep dive with examples and enforcement: [rules-of-hooks.md](./rules-of-hooks.md). Ref: [react.dev/reference/rules/rules-of-hooks](https://react.dev/reference/rules/rules-of-hooks).
+2. **Essential vs derived state.** For every piece of state, ask "can I compute this from existing state, props, or URL?". If yes, derive during render — don't store. Storing derived state is the most common cause of out-of-sync UI bugs. Ref: [You Might Not Need an Effect](https://react.dev/learn/you-might-not-need-an-effect).
+3. **State locality (push state down).** State lives as close as possible to its consumer. State held high in the tree that only one leaf reads causes unnecessary re-renders and obscures the data flow.
+4. **Single Responsibility per state slice.** Each `useState` / store slice represents exactly one concern. Don't mix loading with data, selection with filter, draft with persisted. Boolean explosions are conflated concerns — model as a discriminated union or split.
+5. **Server state never lives in `useState`+`useEffect` fetch pairs.** Highest-frequency Critical finding. Causes race conditions, no cache, lost data on remount, no shared cache, no refetch story. The fix is a query layer (TanStack Query, SWR, RTK Query, Apollo, route loaders, RSC). Recommend a library; flag the anti-pattern, not the library's absence.
+6. **Server state never lives in a global client store** (Zustand, Redux, Jotai, Context). Caching, invalidation, and staleness are the query layer's job. Client stores hold UI state, ephemeral selections, derived view state.
+7. **Effects that should be event handlers.** Anything triggered by a user action (not by external sync) belongs in the handler, not in an effect watching state. Second-highest-frequency Major finding.
+8. **Effects without cleanup.** Subscriptions, listeners, timers, aborts must clean up. Every missing cleanup is a memory leak.
+9. **Stale closures.** Deps arrays missing values referenced inside. Flag; distinguish from intentional ref-based access.
+10. **State shape.** Multiple `useState` calls that always change together → one `useReducer` or one object. Boolean explosions (`isLoading`, `isError`, `isSuccess`) → discriminated union or query lib status.
+11. **URL as state.** Filters, tabs, modal open state — anything shareable/reloadable — belongs in the URL, not local state.
