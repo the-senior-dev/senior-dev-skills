@@ -4,7 +4,7 @@ description: Interactive 10-question multiple-choice React interview, by theSeni
 license: MIT
 metadata:
   author: theseniordev
-  version: "1.3.0"
+  version: "1.4.0"
   argument-hint: "[topic: broad | structure | state | performance | types-forms-a11y | styling | patterns]"
 ---
 
