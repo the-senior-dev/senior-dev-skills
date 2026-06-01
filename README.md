@@ -1,6 +1,6 @@
 <img src="./cover.webp" alt="A senior wizard in sunglasses — TheSeniorDev" width="320" align="right" />
 
-# senior-dev-skills
+# Senior Engineering Skills for Agentic Coding
 
 **Claude Code skills to help you think like a Senior Engineer.**
 
@@ -9,15 +9,6 @@ By [TheSeniorDev](https://theseniordev.com/) · MIT-licensed · Contributions we
 <br clear="right" />
 
 ---
-
-## What's inside
-
-| Skill | What it does | Invoke |
-|---|---|---|
-| [`react-senior-review`](./skills/react-senior-review) | Review React features like a Senior Engineer. | `/react-senior-review <path>` |
-| [`react-interview`](./skills/react-interview) | Senior level React interview practice to nail your next interview. | `/react-interview [topic]` |
-
-Both skills run on the same rules catalog — one file per dimension, plus Rules of Hooks, the patterns playbook, the severity rubric, and curated docs. The canonical copy lives in [`skills/react-senior-review/references/`](./skills/react-senior-review/references) (indexed by [`principles.md`](./skills/react-senior-review/principles.md)); `react-interview` carries a **synced copy** so each skill installs and runs independently. Edit the canonical files, then run `scripts/sync-references.sh`.
 
 ## Install
 
@@ -32,22 +23,29 @@ Or with Claude Code's native plugin marketplace:
 /plugin install senior-dev-skills@senior-dev-skills
 ```
 
-Now in Claude Code:
+Restart Claude Code (or open a new session) to pick up the new skills.
+
+> Need Claude Code? Get it at [claude.com/code](https://claude.com/code).
+
+## How to use in Claude Code
+
+Invoke a skill by name, with an optional argument:
 
 ```
 /react-senior-review src/features/checkout   # review a feature
 /react-interview state                       # quiz yourself on state & data flow
 ```
 
-Restart Claude Code (or open a new session) to pick up the new skills.
+`react-senior-review` takes a path to the feature you want reviewed; `react-interview` takes an optional topic (or none, for a broad interview).
 
-> Need Claude Code? Get it at [claude.com/code](https://claude.com/code).
+## What's inside
 
-## Why these skills
+| Skill | What it does | Invoke |
+|---|---|---|
+| [`react-senior-review`](./skills/react-senior-review) | Review React features like a Senior Engineer. | `/react-senior-review <path>` |
+| [`react-interview`](./skills/react-interview) | Senior level React interview practice to nail your next interview. | `/react-interview [topic]` |
 
-These skills are like having a Senior Engineer by your side, pointing out things that you might have missed. 
-
-To do that, they leverage Software Fundamentals, Design Patterns and Senior Mental Models and the power of Claude Code. Keep in mind they are:
+These skills are like having a Senior Engineer by your side, pointing out things you might have missed. They leverage Software Fundamentals, Design Patterns, and Senior Mental Models together with the power of Claude Code. Keep in mind they are:
 
 - **Highly opinionated.** Biased toward what holds up in production — the wisdom a senior reviewer brings, not a neutral checklist.
 - **Anti-`useEffect`.** Reach for derived state first, then event handlers, then render-time computation. Effects are the last resort.
@@ -55,6 +53,8 @@ To do that, they leverage Software Fundamentals, Design Patterns and Senior Ment
 - **Push state down.** State lives as close to its consumer as possible.
 - **Colocate, then share.** Code used by one feature stays in that feature; promote it to `shared/` only when a second feature actually needs it.
 - **Name the pattern.** Custom hook? Compound components? HOC? Render prop? State machine? Optimistic update? If a known pattern fits the fix, it gets named.
+
+Both skills run on the same rules catalog — one file per dimension, plus Rules of Hooks, the patterns playbook, the severity rubric, and curated docs. The canonical copy lives in [`skills/react-senior-review/references/`](./skills/react-senior-review/references) (indexed by [`principles.md`](./skills/react-senior-review/principles.md)); `react-interview` carries a **synced copy** so each skill installs and runs independently. Edit the canonical files, then run `scripts/sync-references.sh`.
 
 ## Roadmap
 
