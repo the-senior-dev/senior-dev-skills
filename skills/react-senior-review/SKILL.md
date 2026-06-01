@@ -4,7 +4,7 @@ description: Senior-level review of a React feature, by theSeniorDev — structu
 license: MIT
 metadata:
   author: theseniordev
-  version: "1.3.0"
+  version: "1.4.0"
   argument-hint: <feature-path>
 ---
 

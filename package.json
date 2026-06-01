@@ -1,6 +1,6 @@
 {
     "name": "@theseniordev/skills",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "description": "Senior-level Claude Code skills by theSeniorDev",
     "publishConfig": { "access": "public" },
     "bin": {
