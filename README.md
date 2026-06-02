@@ -42,7 +42,7 @@ Invoke a skill by name, with an optional argument:
 
 | Skill | What it does | Invoke |
 |---|---|---|
-| [`react-senior-code-review`](./skills/react-senior-code-review) | Review React features like a Senior Engineer. | `/react-senior-code-review <path>` |
+| [`react-senior-code-review`](./skills/react-senior-code-review) | Review React code like a Senior. | `/react-senior-code-review <path>` |
 | [`react-senior-interview`](./skills/react-senior-interview) | Senior level React interview practice. | `/react-senior-interview [topic]` |
 
 These skills are like having a Senior Engineer by your side, pointing out things you might have missed. They leverage Software Fundamentals, Design Patterns, and Senior Mental Models together with the power of Claude Code. Keep in mind they are:
