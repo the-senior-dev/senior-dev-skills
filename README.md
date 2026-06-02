@@ -32,18 +32,18 @@ Restart Claude Code (or open a new session) to pick up the new skills.
 Invoke a skill by name, with an optional argument:
 
 ```
-/react-senior-review src/features/checkout   # review a feature
-/react-interview state                       # quiz yourself on state & data flow
+/react-senior-code-review src/features/checkout   # review a feature
+/react-senior-interview state                       # quiz yourself on state & data flow
 ```
 
-`react-senior-review` takes a path to the feature you want reviewed; `react-interview` takes an optional topic (or none, for a broad interview).
+`react-senior-code-review` takes a path to the feature you want reviewed; `react-senior-interview` takes an optional topic (or none, for a broad interview).
 
 ## What's inside
 
 | Skill | What it does | Invoke |
 |---|---|---|
-| [`react-senior-review`](./skills/react-senior-review) | Review React features like a Senior Engineer. | `/react-senior-review <path>` |
-| [`react-interview`](./skills/react-interview) | Senior level React interview practice to nail your next interview. | `/react-interview [topic]` |
+| [`react-senior-code-review`](./skills/react-senior-code-review) | Review React features like a Senior Engineer. | `/react-senior-code-review <path>` |
+| [`react-senior-interview`](./skills/react-senior-interview) | Senior level React interview practice to nail your next interview. | `/react-senior-interview [topic]` |
 
 These skills are like having a Senior Engineer by your side, pointing out things you might have missed. They leverage Software Fundamentals, Design Patterns, and Senior Mental Models together with the power of Claude Code. Keep in mind they are:
 
@@ -54,7 +54,7 @@ These skills are like having a Senior Engineer by your side, pointing out things
 - **Colocate, then share.** Code used by one feature stays in that feature; promote it to `shared/` only when a second feature actually needs it.
 - **Name the pattern.** Custom hook? Compound components? HOC? Render prop? State machine? Optimistic update? If a known pattern fits the fix, it gets named.
 
-Both skills run on the same rules catalog — one file per dimension, plus Rules of Hooks, the patterns playbook, the severity rubric, and curated docs. The canonical copy lives in [`skills/react-senior-review/references/`](./skills/react-senior-review/references) (indexed by [`principles.md`](./skills/react-senior-review/principles.md)); `react-interview` carries a **synced copy** so each skill installs and runs independently. Edit the canonical files, then run `scripts/sync-references.sh`.
+Both skills run on the same rules catalog — one file per dimension, plus Rules of Hooks, the patterns playbook, the severity rubric, and curated docs. The canonical copy lives in [`skills/react-senior-code-review/references/`](./skills/react-senior-code-review/references) (indexed by [`principles.md`](./skills/react-senior-code-review/principles.md)); `react-senior-interview` carries a **synced copy** so each skill installs and runs independently. Edit the canonical files, then run `scripts/sync-references.sh`.
 
 ## Roadmap
 
@@ -68,7 +68,7 @@ You can open an issue with the area you want next.
 
 ## Contributing
 
-The principles in `skills/react-senior-review/references/` are the core of both skills. Pull requests are welcome — especially:
+The principles in `skills/react-senior-code-review/references/` are the core of both skills. Pull requests are welcome — especially:
 
 - Sharper rule statements (less verbose).
 - New patterns (with a clear "when it makes sense / when not").

@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const os = require('os');
 
-const SKILLS = ['react-interview', 'react-senior-review'];
+const SKILLS = ['react-senior-interview', 'react-senior-code-review'];
 const TARGET_DIR = path.join(os.homedir(), '.claude', 'skills');
 const SOURCE_DIR = path.resolve(__dirname, '..', 'skills');
 const force = process.argv.includes('--force');

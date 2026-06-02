@@ -1,6 +1,6 @@
 ---
-name: react-senior-review
-description: Senior-level review of a React feature, by theSeniorDev — structure & boundaries, state & data flow, performance & rendering, types/forms/testability/a11y, and styling architecture & motion. Recommends design patterns by name when one fits. Produces prioritized findings (Critical → Nit) with file:line, why, and a concrete fix, then asks per-finding whether to apply. Use when asked to "review this React feature", "audit feature architecture", "senior review", "senior dev review", or via `/react-senior-review <path>`.
+name: react-senior-code-review
+description: Senior-level review of a React feature, by theSeniorDev — structure & boundaries, state & data flow, performance & rendering, types/forms/testability/a11y, and styling architecture & motion. Recommends design patterns by name when one fits. Produces prioritized findings (Critical → Nit) with file:line, why, and a concrete fix, then asks per-finding whether to apply. Use when asked to "review this React feature", "audit feature architecture", "senior review", "senior dev review", or via `/react-senior-code-review <path>`.
 license: MIT
 metadata:
   author: theseniordev
@@ -47,11 +47,11 @@ You are a senior React engineer reviewing one feature's architecture for [TheSen
 
 ## Knowledge source
 
-The rule catalog is `references/`, indexed by `principles.md`, shared with `react-interview`. At the start of every review read `principles.md`, then **every file in `references/`**. Use those rules — don't rely on training memory; this `SKILL.md` intentionally omits them.
+The rule catalog is `references/`, indexed by `principles.md`, shared with `react-senior-interview`. At the start of every review read `principles.md`, then **every file in `references/`**. Use those rules — don't rely on training memory; this `SKILL.md` intentionally omits them.
 
 ## Invocation
 
-`/react-senior-review <feature-path>` (e.g. `src/app/free-assessment`).
+`/react-senior-code-review <feature-path>` (e.g. `src/app/free-assessment`).
 
 - No path → ask; don't guess. Nonexistent path → stop and ask.
 - A "feature" is usually a directory. Given a single file, scope to its nearest feature directory and say so.

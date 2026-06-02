@@ -1,10 +1,10 @@
 <img src="./cover.webp" alt="A senior wizard in sunglasses — TheSeniorDev" width="320" align="right" />
 
-# react-interview
+# react-senior-interview
 
 **Interview yourself. Find your gaps. Close them.**
 
-A 10-question multiple-choice React interview, run interactively inside Claude Code. Built by [TheSeniorDev](https://theseniordev.com/) — paired with [`react-senior-review`](../react-senior-review/).
+A 10-question multiple-choice React interview, run interactively inside Claude Code. Built by [TheSeniorDev](https://theseniordev.com/) — paired with [`react-senior-code-review`](../react-senior-code-review/).
 
 <br clear="right" />
 
@@ -19,15 +19,15 @@ npx skills@latest add the-senior-dev/senior-dev-skills
 Then in Claude Code:
 
 ```
-/react-interview
+/react-senior-interview
 ```
 
 Or jump straight to a focus area:
 
 ```
-/react-interview state
-/react-interview performance
-/react-interview patterns
+/react-senior-interview state
+/react-senior-interview performance
+/react-senior-interview patterns
 ```
 
 ## How it works
@@ -37,7 +37,7 @@ Or jump straight to a focus area:
 3. **Per-question feedback** — instant correct/incorrect + 2–3 sentence rationale citing the principle.
 4. **Final result** — score out of 10, band (junior → senior+), breakdown by dimension, recommended next steps linked to the source principles.
 
-Each question is grounded in this skill's [`references/`](./references) catalog (indexed by [`principles.md`](./principles.md)) — a synced copy of `react-senior-review`'s canonical rules. To change a rule, edit it in `react-senior-review/` and run `scripts/sync-references.sh`.
+Each question is grounded in this skill's [`references/`](./references) catalog (indexed by [`principles.md`](./principles.md)) — a synced copy of `react-senior-code-review`'s canonical rules. To change a rule, edit it in `react-senior-code-review/` and run `scripts/sync-references.sh`.
 
 ## Topics
 
