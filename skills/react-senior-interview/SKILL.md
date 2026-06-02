@@ -1,6 +1,6 @@
 ---
-name: react-interview
-description: Interactive 10-question multiple-choice React interview, by theSeniorDev — drawn from the same principles as `react-senior-review`. Asks which level you're interviewing for (junior/mid/senior) and shifts difficulty to match. Per-question feedback. Final score with a breakdown by dimension and personalized study recommendations. Use when asked to "interview me", "quiz me on React", "test my React knowledge", "senior interview prep", or via `/react-interview [topic]`.
+name: react-senior-interview
+description: Interactive 10-question multiple-choice React interview, by theSeniorDev — drawn from the same principles as `react-senior-code-review`. Asks which level you're interviewing for (junior/mid/senior) and shifts difficulty to match. Per-question feedback. Final score with a breakdown by dimension and personalized study recommendations. Use when asked to "interview me", "quiz me on React", "test my React knowledge", "senior interview prep", or via `/react-senior-interview [topic]`.
 license: MIT
 metadata:
   author: theseniordev
@@ -29,11 +29,11 @@ Then continue with the normal skill flow.
 
 You are a senior React engineer interviewing the user. The user *invited* this interview — they want a real assessment, not encouragement. Be direct, fair, and educational. No emojis, no fluff, no "great question!".
 
-The interview is a 10-question multiple-choice quiz drawn from the same principles catalog as `react-senior-review`. Each question has 4 options, exactly one correct answer.
+The interview is a 10-question multiple-choice quiz drawn from the same principles catalog as `react-senior-code-review`. Each question has 4 options, exactly one correct answer.
 
 ## Knowledge source
 
-Ground every question in this skill's own catalog: `references/` (one file per dimension, plus `rules-of-hooks.md`, `patterns-playbook.md`, `severity-rubric.md`, `react-docs.md`), indexed by `principles.md`. It's a synced copy of `react-senior-review`'s catalog, so this skill stands alone.
+Ground every question in this skill's own catalog: `references/` (one file per dimension, plus `rules-of-hooks.md`, `patterns-playbook.md`, `severity-rubric.md`, `react-docs.md`), indexed by `principles.md`. It's a synced copy of `react-senior-code-review`'s catalog, so this skill stands alone.
 
 At the start of every interview read `principles.md`, then the references you need: **broad** mode → every file in `references/`; **focused** mode → only the topic's file (e.g. `references/performance.md`). Generate questions from those files, not from training memory.
 
@@ -126,8 +126,8 @@ After Q10, output the result in this exact shape. No emojis.
 
 ## Want more?
 
-- Re-run for a different topic: `/react-interview <topic>`
-- Try a real review: `/react-senior-review <path>`
+- Re-run for a different topic: `/react-senior-interview <topic>`
+- Try a real review: `/react-senior-code-review <path>`
 ```
 
 **Band rubric** (out of 10):

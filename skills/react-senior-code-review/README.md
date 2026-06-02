@@ -1,6 +1,6 @@
 <img src="./cover.webp" alt="A senior wizard in sunglasses — TheSeniorDev" width="320" align="right" />
 
-# react-senior-review
+# react-senior-code-review
 
 **Senior eyes on your feature, on demand.**
 
@@ -24,7 +24,7 @@ Pixel polish, naming bikesheds, formatting, test coverage, absence of a specific
 
 ## Install
 
-This skill ships in the [`senior-dev-skills`](https://github.com/the-senior-dev/senior-dev-skills) repo and is **self-contained** — it owns the canonical rules catalog (`references/`, indexed by `principles.md`; the paired `react-interview` skill carries a synced copy).
+This skill ships in the [`senior-dev-skills`](https://github.com/the-senior-dev/senior-dev-skills) repo and is **self-contained** — it owns the canonical rules catalog (`references/`, indexed by `principles.md`; the paired `react-senior-interview` skill carries a synced copy).
 
 ```bash
 npx skills@latest add the-senior-dev/senior-dev-skills
@@ -33,7 +33,7 @@ npx skills@latest add the-senior-dev/senior-dev-skills
 Then in Claude Code:
 
 ```
-/react-senior-review src/features/checkout
+/react-senior-code-review src/features/checkout
 ```
 
 ## Output
