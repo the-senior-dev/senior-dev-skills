@@ -42,10 +42,10 @@ Invoke a skill by name, with an optional argument:
 
 | Skill | What it does | Invoke |
 |---|---|---|
-| [`react-senior-code-review`](./skills/react-senior-code-review) | Review React features like a Senior Engineer. | `/react-senior-code-review <path>` |
-| [`react-senior-interview`](./skills/react-senior-interview) | Senior level React interview practice to nail your next interview. | `/react-senior-interview [topic]` |
+| [`react-senior-code-review`](./skills/react-senior-code-review) | Review React code like a Senior. | `/react-senior-code-review <path>` |
+| [`react-senior-interview`](./skills/react-senior-interview) | Senior level React interview practice. | `/react-senior-interview [topic]` |
 
-These skills are like having a Senior Engineer by your side, pointing out things you might have missed. They leverage Software Fundamentals, Design Patterns, and Senior Mental Models together with the power of Claude Code. Keep in mind they are:
+These skills are like having a Senior Engineer by your side, pointing out things you might have missed. They leverage Software Fundamentals, Design Patterns, and Senior Mental Models — together with the power of Claude Code — to push your code toward **production readiness**, prep you with **real interview questions**, and ground every call in deep **domain knowledge and fundamentals**. Keep in mind they are:
 
 - **Highly opinionated.** Biased toward what holds up in production — the wisdom a senior reviewer brings, not a neutral checklist.
 - **Anti-`useEffect`.** Reach for derived state first, then event handlers, then render-time computation. Effects are the last resort.
